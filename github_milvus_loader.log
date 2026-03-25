@@ -1,0 +1,258 @@
+2025-07-24 00:32:52,137 - INFO - Loaded environment variables from .env file
+2025-07-24 00:34:05,577 - INFO - Starting GitHub to Milvus data loading process...
+2025-07-24 00:34:05,971 - ERROR - Failed to connect to Milvus: <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNAUTHENTICATED
+	details = "The cluster does not exist in region gcp-us-west1. Use List Clusters to view the existing clusters in this region. Learn more at https://docs.zilliz.com/reference/list-clusters"
+	debug_error_string = "UNKNOWN:Error received from peer  {grpc_message:"The cluster does not exist in region gcp-us-west1. Use List Clusters to view the existing clusters in this region. Learn more at https://docs.zilliz.com/reference/list-clusters", grpc_status:16, created_time:"2025-07-24T00:34:05.96546-04:00"}"
+>
+2025-07-24 00:34:05,972 - ERROR - Failed to connect to Milvus
+2025-07-24 00:37:30,800 - INFO - Loaded environment variables from .env file
+2025-07-24 00:37:37,956 - INFO - Starting GitHub to Milvus data loading process...
+2025-07-24 00:37:38,395 - ERROR - Failed to connect to Milvus: <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNAUTHENTICATED
+	details = "The cluster does not exist in region gcp-us-west1. Use List Clusters to view the existing clusters in this region. Learn more at https://docs.zilliz.com/reference/list-clusters"
+	debug_error_string = "UNKNOWN:Error received from peer  {created_time:"2025-07-24T00:37:38.387475-04:00", grpc_status:16, grpc_message:"The cluster does not exist in region gcp-us-west1. Use List Clusters to view the existing clusters in this region. Learn more at https://docs.zilliz.com/reference/list-clusters"}"
+>
+2025-07-24 00:37:38,396 - ERROR - Failed to connect to Milvus
+2025-07-24 00:39:31,620 - INFO - Loaded environment variables from .env file
+2025-07-24 00:39:58,036 - INFO - Starting GitHub to Milvus data loading process...
+2025-07-24 00:39:58,352 - INFO - Connected to Milvus cluster: vibecoding_072025
+2025-07-24 00:39:58,502 - INFO - Collection rag_01 already exists
+2025-07-24 00:39:58,886 - INFO - Fetching files from repository: fastapi/fastapi
+2025-07-24 00:39:59,169 - ERROR - Error fetching repository fastapi/fastapi: 404 Client Error: Not Found for url: https://api.github.com/repos/fastapi/fastapi/git/trees/main?recursive=1
+2025-07-24 00:39:59,169 - INFO - Successfully fetched 0 files from fastapi/fastapi
+2025-07-24 00:39:59,169 - INFO - Total files collected: 0
+2025-07-24 00:39:59,169 - INFO - Fetching files from repository: django/django
+2025-07-24 00:40:06,591 - INFO - Successfully fetched 25 files from django/django
+2025-07-24 00:40:06,595 - INFO - Total files collected: 25
+2025-07-24 00:40:06,595 - INFO - Fetching files from repository: rails/rails
+2025-07-24 00:40:13,794 - INFO - Successfully fetched 25 files from rails/rails
+2025-07-24 00:40:13,796 - INFO - Total files collected: 50
+2025-07-24 00:40:13,796 - INFO - Fetching files from repository: spring-projects/spring-boot
+2025-07-24 00:40:22,155 - INFO - Successfully fetched 25 files from spring-projects/spring-boot
+2025-07-24 00:40:22,161 - INFO - Total files collected: 75
+2025-07-24 00:40:22,161 - INFO - Fetching files from repository: gin-gonic/gin
+2025-07-24 00:40:22,289 - ERROR - Error fetching repository gin-gonic/gin: 404 Client Error: Not Found for url: https://api.github.com/repos/gin-gonic/gin/git/trees/main?recursive=1
+2025-07-24 00:40:22,289 - INFO - Successfully fetched 0 files from gin-gonic/gin
+2025-07-24 00:40:22,289 - INFO - Total files collected: 75
+2025-07-24 00:40:22,289 - INFO - Fitting TF-IDF vectorizer on 75 documents...
+2025-07-24 00:40:22,331 - INFO - Vocabulary size: 1789
+2025-07-24 00:40:22,333 - INFO - Created 75 sparse vectors
+2025-07-24 00:40:22,333 - ERROR - Failed to insert data: <DataNotMatchException: (code=1, message=Insert missed an field `vector` to collection without set nullable==true or set default_value)>
+2025-07-24 00:40:22,334 - ERROR - Failed to insert data into Milvus
+2025-07-24 00:40:54,027 - INFO - Loaded environment variables from .env file
+2025-07-24 00:41:02,554 - INFO - Starting GitHub to Milvus data loading process...
+2025-07-24 00:41:02,973 - INFO - Connected to Milvus cluster: vibecoding_072025
+2025-07-24 00:41:03,061 - INFO - Collection rag_01 already exists
+2025-07-24 00:41:03,262 - WARNING - Existing collection has incompatible schema. Dropping and recreating...
+2025-07-24 00:41:03,606 - INFO - Created collection: rag_01
+2025-07-24 00:41:04,977 - INFO - Created sparse vector index
+2025-07-24 00:41:04,977 - INFO - Fetching files from repository: fastapi/fastapi
+2025-07-24 00:41:05,271 - INFO - Using default branch: master
+2025-07-24 00:41:11,704 - INFO - Successfully fetched 25 files from fastapi/fastapi
+2025-07-24 00:41:11,706 - INFO - Total files collected: 25
+2025-07-24 00:41:11,706 - INFO - Fetching files from repository: django/django
+2025-07-24 00:41:11,996 - INFO - Using default branch: main
+2025-07-24 00:41:18,894 - INFO - Successfully fetched 25 files from django/django
+2025-07-24 00:41:18,896 - INFO - Total files collected: 50
+2025-07-24 00:41:18,896 - INFO - Fetching files from repository: rails/rails
+2025-07-24 00:41:19,266 - INFO - Using default branch: main
+2025-07-24 00:41:25,673 - INFO - Successfully fetched 25 files from rails/rails
+2025-07-24 00:41:25,675 - INFO - Total files collected: 75
+2025-07-24 00:41:25,675 - INFO - Fetching files from repository: spring-projects/spring-boot
+2025-07-24 00:41:26,012 - INFO - Using default branch: main
+2025-07-24 00:41:33,548 - INFO - Successfully fetched 25 files from spring-projects/spring-boot
+2025-07-24 00:41:33,553 - INFO - Total files collected: 100
+2025-07-24 00:41:33,553 - INFO - Fetching files from repository: gin-gonic/gin
+2025-07-24 00:41:33,735 - INFO - Using default branch: master
+2025-07-24 00:41:40,497 - INFO - Successfully fetched 25 files from gin-gonic/gin
+2025-07-24 00:41:40,498 - INFO - Total files collected: 125
+2025-07-24 00:41:40,498 - INFO - Fitting TF-IDF vectorizer on 125 documents...
+2025-07-24 00:41:40,573 - INFO - Vocabulary size: 3182
+2025-07-24 00:41:40,577 - INFO - Created 125 sparse vectors
+2025-07-24 00:41:40,578 - ERROR - Failed to insert data: <DataNotMatchException: (code=1, message=The Input data type is inconsistent with defined schema, {id} field should be a varchar, but got a {<class 'list'>} instead.)>
+2025-07-24 00:41:40,578 - ERROR - Failed to insert data into Milvus
+2025-07-24 00:42:02,189 - INFO - Loaded environment variables from .env file
+2025-07-24 00:42:11,243 - INFO - Starting GitHub to Milvus data loading process...
+2025-07-24 00:42:11,412 - INFO - Connected to Milvus cluster: vibecoding_072025
+2025-07-24 00:42:11,523 - INFO - Collection rag_01 already exists
+2025-07-24 00:42:11,881 - INFO - Existing collection has compatible schema
+2025-07-24 00:42:11,881 - INFO - Fetching files from repository: huggingface/transformers
+2025-07-24 00:42:12,232 - INFO - Using default branch: main
+2025-07-24 00:42:19,549 - INFO - Successfully fetched 25 files from huggingface/transformers
+2025-07-24 00:42:19,551 - INFO - Total files collected: 25
+2025-07-24 00:42:19,551 - INFO - Fetching files from repository: pytorch/pytorch
+2025-07-24 00:42:19,849 - INFO - Using default branch: main
+2025-07-24 00:42:27,888 - INFO - Successfully fetched 25 files from pytorch/pytorch
+2025-07-24 00:42:27,894 - INFO - Total files collected: 50
+2025-07-24 00:42:27,894 - INFO - Fetching files from repository: tensorflow/tensorflow
+2025-07-24 00:42:28,132 - INFO - Using default branch: master
+2025-07-24 00:42:37,061 - INFO - Successfully fetched 25 files from tensorflow/tensorflow
+2025-07-24 00:42:37,071 - INFO - Total files collected: 75
+2025-07-24 00:42:37,071 - INFO - Fetching files from repository: openai/openai-python
+2025-07-24 00:42:37,312 - INFO - Using default branch: main
+2025-07-24 00:42:44,608 - INFO - Successfully fetched 25 files from openai/openai-python
+2025-07-24 00:42:44,608 - INFO - Total files collected: 100
+2025-07-24 00:42:44,608 - INFO - Fetching files from repository: microsoft/DeepSpeed
+2025-07-24 00:42:44,917 - INFO - Using default branch: master
+2025-07-24 00:42:55,058 - INFO - Successfully fetched 25 files from microsoft/DeepSpeed
+2025-07-24 00:42:55,059 - INFO - Total files collected: 125
+2025-07-24 00:42:55,059 - INFO - Fitting TF-IDF vectorizer on 125 documents...
+2025-07-24 00:42:55,146 - INFO - Vocabulary size: 3592
+2025-07-24 00:42:55,151 - INFO - Created 125 sparse vectors
+2025-07-24 00:42:55,153 - ERROR - Failed to insert data: <ParamError: (code=1, message=input must be a sparse matrix in supported format)>
+2025-07-24 00:42:55,153 - ERROR - Failed to insert data into Milvus
+2025-07-24 00:43:48,380 - INFO - Loaded environment variables from .env file
+2025-07-24 00:43:55,813 - INFO - Loaded environment variables from .env file
+2025-07-24 00:43:55,814 - INFO - Starting GitHub to Milvus data loading process...
+2025-07-24 00:43:56,351 - INFO - Connected to Milvus cluster: vibecoding_072025
+2025-07-24 00:43:56,652 - INFO - Collection rag_01 already exists
+2025-07-24 00:43:57,165 - INFO - Existing collection has compatible schema
+2025-07-24 00:43:57,166 - INFO - Fetching files from repository: huggingface/transformers
+2025-07-24 00:43:57,571 - INFO - Using default branch: main
+2025-07-24 00:44:04,117 - INFO - Successfully fetched 25 files from huggingface/transformers
+2025-07-24 00:44:04,120 - INFO - Total files collected: 25
+2025-07-24 00:44:04,120 - INFO - Fetching files from repository: pytorch/pytorch
+2025-07-24 00:44:04,436 - INFO - Using default branch: main
+2025-07-24 00:44:12,200 - INFO - Successfully fetched 25 files from pytorch/pytorch
+2025-07-24 00:44:12,206 - INFO - Total files collected: 50
+2025-07-24 00:44:12,206 - INFO - Fetching files from repository: tensorflow/tensorflow
+2025-07-24 00:44:12,494 - INFO - Using default branch: master
+2025-07-24 00:44:20,332 - INFO - Successfully fetched 25 files from tensorflow/tensorflow
+2025-07-24 00:44:20,341 - INFO - Total files collected: 75
+2025-07-24 00:44:20,342 - INFO - Fetching files from repository: openai/openai-python
+2025-07-24 00:44:20,551 - INFO - Using default branch: main
+2025-07-24 00:44:27,283 - INFO - Successfully fetched 25 files from openai/openai-python
+2025-07-24 00:44:27,284 - INFO - Total files collected: 100
+2025-07-24 00:44:27,284 - INFO - Fetching files from repository: microsoft/DeepSpeed
+2025-07-24 00:44:27,602 - INFO - Using default branch: master
+2025-07-24 00:44:36,778 - INFO - Successfully fetched 25 files from microsoft/DeepSpeed
+2025-07-24 00:44:36,780 - INFO - Total files collected: 125
+2025-07-24 00:44:36,780 - INFO - Fitting TF-IDF vectorizer on 125 documents...
+2025-07-24 00:44:36,869 - INFO - Vocabulary size: 3592
+2025-07-24 00:44:36,874 - INFO - Created 125 sparse vectors
+2025-07-24 00:44:36,876 - ERROR - Batch insertion failed: <ParamError: (code=1, message=input must be a sparse matrix in supported format)>
+2025-07-24 00:44:36,876 - ERROR - Individual insert 1 failed: <ParamError: (code=1, message=input must be a sparse matrix in supported format)>
+2025-07-24 00:44:36,876 - INFO - Inserted batch 1, total: 100
+2025-07-24 00:44:36,877 - ERROR - Batch insertion failed: <ParamError: (code=1, message=input must be a sparse matrix in supported format)>
+2025-07-24 00:44:36,877 - ERROR - Individual insert 1 failed: <ParamError: (code=1, message=input must be a sparse matrix in supported format)>
+2025-07-24 00:44:36,877 - INFO - Inserted batch 2, total: 125
+2025-07-24 00:44:37,614 - INFO - Successfully inserted 125 records
+2025-07-24 00:44:37,614 - INFO - Successfully loaded data into Milvus
+2025-07-24 00:44:38,777 - INFO - Collection loaded into memory
+2025-07-24 00:44:39,150 - INFO - Collection now contains 0 entities
+2025-07-24 00:45:52,130 - INFO - Loaded environment variables from .env file
+2025-07-24 00:45:52,131 - INFO - Starting GitHub to Milvus data loading process...
+2025-07-24 00:45:52,310 - INFO - Connected to Milvus cluster: vibecoding_072025
+2025-07-24 00:45:52,569 - INFO - Collection rag_01 already exists
+2025-07-24 00:45:52,906 - INFO - Existing collection has compatible schema
+2025-07-24 00:45:52,906 - INFO - Fetching files from repository: huggingface/transformers
+2025-07-24 00:45:53,238 - INFO - Using default branch: main
+2025-07-24 00:46:00,231 - INFO - Successfully fetched 25 files from huggingface/transformers
+2025-07-24 00:46:00,233 - INFO - Total files collected: 25
+2025-07-24 00:46:00,233 - INFO - Fetching files from repository: pytorch/pytorch
+2025-07-24 00:46:00,557 - INFO - Using default branch: main
+2025-07-24 00:46:08,508 - INFO - Successfully fetched 25 files from pytorch/pytorch
+2025-07-24 00:46:08,513 - INFO - Total files collected: 50
+2025-07-24 00:46:08,513 - INFO - Fetching files from repository: tensorflow/tensorflow
+2025-07-24 00:46:08,740 - INFO - Using default branch: master
+2025-07-24 00:46:18,809 - INFO - Successfully fetched 25 files from tensorflow/tensorflow
+2025-07-24 00:46:18,820 - INFO - Total files collected: 75
+2025-07-24 00:46:18,820 - INFO - Fetching files from repository: openai/openai-python
+2025-07-24 00:46:19,048 - INFO - Using default branch: main
+2025-07-24 00:46:26,648 - INFO - Successfully fetched 25 files from openai/openai-python
+2025-07-24 00:46:26,649 - INFO - Total files collected: 100
+2025-07-24 00:46:26,649 - INFO - Fetching files from repository: microsoft/DeepSpeed
+2025-07-24 00:46:26,942 - INFO - Using default branch: master
+2025-07-24 00:46:36,581 - INFO - Successfully fetched 25 files from microsoft/DeepSpeed
+2025-07-24 00:46:36,583 - INFO - Total files collected: 125
+2025-07-24 00:46:36,583 - INFO - Fitting TF-IDF vectorizer on 125 documents...
+2025-07-24 00:46:36,670 - INFO - Vocabulary size: 3592
+2025-07-24 00:46:36,675 - INFO - Created 125 sparse vectors
+2025-07-24 00:46:37,283 - INFO - Insertion successful for batch 1
+2025-07-24 00:46:37,283 - INFO - Inserted batch 1, total: 100
+2025-07-24 00:46:37,691 - INFO - Insertion successful for batch 2
+2025-07-24 00:46:37,692 - INFO - Inserted batch 2, total: 125
+2025-07-24 00:46:40,573 - INFO - Successfully inserted 125 records
+2025-07-24 00:46:40,573 - INFO - Successfully loaded data into Milvus
+2025-07-24 00:46:40,734 - INFO - Collection loaded into memory
+2025-07-24 00:46:40,975 - INFO - Collection now contains 125 entities
+2025-07-24 00:47:39,179 - INFO - Loaded environment variables from .env file
+2025-07-24 00:47:39,180 - INFO - Starting GitHub to Milvus data loading process...
+2025-07-24 00:47:39,580 - INFO - Connected to Milvus cluster: vibecoding_072025
+2025-07-24 00:47:39,720 - INFO - Collection rag_01 already exists
+2025-07-24 00:47:40,089 - INFO - Existing collection has compatible schema
+2025-07-24 00:47:40,090 - INFO - Fetching files from repository: fastapi/fastapi
+2025-07-24 00:47:40,414 - INFO - Using default branch: master
+2025-07-24 00:47:46,970 - INFO - Successfully fetched 25 files from fastapi/fastapi
+2025-07-24 00:47:46,971 - INFO - Total files collected: 25
+2025-07-24 00:47:46,971 - INFO - Fetching files from repository: django/django
+2025-07-24 00:47:47,190 - INFO - Using default branch: main
+2025-07-24 00:47:54,275 - INFO - Successfully fetched 25 files from django/django
+2025-07-24 00:47:54,278 - INFO - Total files collected: 50
+2025-07-24 00:47:54,278 - INFO - Fetching files from repository: rails/rails
+2025-07-24 00:47:54,597 - INFO - Using default branch: main
+2025-07-24 00:48:01,633 - INFO - Successfully fetched 25 files from rails/rails
+2025-07-24 00:48:01,634 - INFO - Total files collected: 75
+2025-07-24 00:48:01,634 - INFO - Fetching files from repository: spring-projects/spring-boot
+2025-07-24 00:48:01,845 - INFO - Using default branch: main
+2025-07-24 00:48:10,035 - INFO - Successfully fetched 25 files from spring-projects/spring-boot
+2025-07-24 00:48:10,040 - INFO - Total files collected: 100
+2025-07-24 00:48:10,040 - INFO - Fetching files from repository: gin-gonic/gin
+2025-07-24 00:48:10,252 - INFO - Using default branch: master
+2025-07-24 00:48:16,870 - INFO - Successfully fetched 25 files from gin-gonic/gin
+2025-07-24 00:48:16,871 - INFO - Total files collected: 125
+2025-07-24 00:48:16,871 - INFO - Fitting TF-IDF vectorizer on 125 documents...
+2025-07-24 00:48:16,941 - INFO - Vocabulary size: 3182
+2025-07-24 00:48:16,946 - INFO - Created 125 sparse vectors
+2025-07-24 00:48:17,908 - INFO - Insertion successful for batch 1
+2025-07-24 00:48:17,909 - INFO - Inserted batch 1, total: 100
+2025-07-24 00:48:19,616 - INFO - Insertion successful for batch 2
+2025-07-24 00:48:19,617 - INFO - Inserted batch 2, total: 125
+2025-07-24 00:48:22,861 - INFO - Successfully inserted 125 records
+2025-07-24 00:48:22,862 - INFO - Successfully loaded data into Milvus
+2025-07-24 00:48:23,698 - INFO - Collection loaded into memory
+2025-07-24 00:48:23,783 - INFO - Collection now contains 250 entities
+2025-07-24 00:55:41,500 - INFO - Will index repositories: ['microsoft/vscode', 'vercel/next.js', 'facebook/react', 'pytorch/pytorch', 'huggingface/transformers']
+2025-07-24 00:55:41,501 - INFO - Starting GitHub to Milvus data loading process...
+2025-07-24 00:55:41,881 - INFO - Connected to Milvus cluster: vibecoding_072025
+2025-07-24 00:55:42,151 - INFO - Collection rag_01 already exists
+2025-07-24 00:55:42,494 - INFO - Existing collection has compatible schema
+2025-07-24 00:55:42,495 - INFO - Fetching files from repository: microsoft/vscode
+2025-07-24 00:55:43,031 - INFO - Using default branch: main
+2025-07-24 00:55:58,768 - INFO - Successfully fetched 30 files from microsoft/vscode
+2025-07-24 00:55:58,774 - INFO - Total files collected: 30
+2025-07-24 00:55:58,774 - INFO - Fetching files from repository: vercel/next.js
+2025-07-24 00:55:59,020 - INFO - Using default branch: canary
+2025-07-24 00:56:10,202 - INFO - Successfully fetched 30 files from vercel/next.js
+2025-07-24 00:56:10,214 - INFO - Total files collected: 60
+2025-07-24 00:56:10,215 - INFO - Fetching files from repository: facebook/react
+2025-07-24 00:56:10,489 - INFO - Using default branch: main
+2025-07-24 00:56:19,403 - INFO - Successfully fetched 30 files from facebook/react
+2025-07-24 00:56:19,407 - INFO - Total files collected: 90
+2025-07-24 00:56:19,407 - INFO - Fetching files from repository: pytorch/pytorch
+2025-07-24 00:56:19,769 - INFO - Using default branch: main
+2025-07-24 00:56:29,091 - INFO - Successfully fetched 30 files from pytorch/pytorch
+2025-07-24 00:56:29,094 - INFO - Total files collected: 120
+2025-07-24 00:56:29,094 - INFO - Fetching files from repository: huggingface/transformers
+2025-07-24 00:56:29,337 - INFO - Using default branch: main
+2025-07-24 00:56:37,326 - INFO - Successfully fetched 30 files from huggingface/transformers
+2025-07-24 00:56:37,327 - INFO - Total files collected: 150
+2025-07-24 00:56:37,327 - INFO - Fitting TF-IDF vectorizer on 150 documents...
+2025-07-24 00:56:37,413 - INFO - Vocabulary size: 3874
+2025-07-24 00:56:37,419 - INFO - Created 150 sparse vectors
+2025-07-24 00:56:37,863 - INFO - Insertion successful for batch 1
+2025-07-24 00:56:37,864 - INFO - Inserted batch 1, total: 100
+2025-07-24 00:56:38,406 - INFO - Insertion successful for batch 2
+2025-07-24 00:56:38,407 - INFO - Inserted batch 2, total: 150
+2025-07-24 00:56:41,398 - INFO - Successfully inserted 150 records
+2025-07-24 00:56:41,398 - INFO - Successfully loaded data into Milvus
+2025-07-24 00:56:41,632 - INFO - Collection loaded into memory
+2025-07-24 00:56:41,752 - INFO - Collection now contains 400 entities
+2025-07-24 00:56:41,756 - INFO - ✅ Data loading completed successfully!
+2025-07-24 00:56:41,756 - INFO - Collection 'rag_01' is ready for searching
+2025-07-24 00:56:41,756 - INFO - 
+To search the collection, use:
+2025-07-24 00:56:41,756 - INFO - collection = Collection('rag_01')
+2025-07-24 00:56:41,756 - INFO - search_params = {'metric_type': 'IP', 'params': {}}
+2025-07-24 00:56:41,756 - INFO - results = collection.search(...)

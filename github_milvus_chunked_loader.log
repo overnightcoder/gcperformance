@@ -1,0 +1,135 @@
+2025-07-24 00:52:32,894 - INFO - 🧪 Starting chunking experiments...
+2025-07-24 00:52:32,894 - INFO - 
+📂 Processing repository: fastapi/fastapi
+2025-07-24 00:52:32,894 - INFO - Fetching files from repository: fastapi/fastapi
+2025-07-24 00:52:33,198 - INFO - Using default branch: master
+2025-07-24 00:52:34,685 - INFO - Successfully fetched 5 files from fastapi/fastapi
+2025-07-24 00:52:34,686 - INFO - 
+🔧 Testing chunking strategy: file
+2025-07-24 00:52:34,686 - INFO - 📊 file: Generated 5 chunks
+2025-07-24 00:52:34,686 - INFO -   Chunk 1: c4587718 (5949 chars)
+2025-07-24 00:52:34,686 - INFO -     Lines: 1-159
+2025-07-24 00:52:34,687 - INFO -   Chunk 2: cab651bc (19 chars)
+2025-07-24 00:52:34,687 - INFO -     Lines: 1-2
+2025-07-24 00:52:34,687 - INFO -   Chunk 3: 4cdb3687 (926 chars)
+2025-07-24 00:52:34,687 - INFO -     Lines: 1-17
+2025-07-24 00:52:34,687 - INFO - 
+🔧 Testing chunking strategy: function
+2025-07-24 00:52:34,688 - INFO - 📊 function: Generated 5 chunks
+2025-07-24 00:52:34,688 - INFO -   Chunk 1: fd779552 (1406 chars)
+2025-07-24 00:52:34,688 - INFO -     Function: read_root
+2025-07-24 00:52:34,688 - INFO -     Lines: 75-124
+2025-07-24 00:52:34,688 - INFO -   Chunk 2: cab651bc (19 chars)
+2025-07-24 00:52:34,688 - INFO -     Lines: 1-2
+2025-07-24 00:52:34,688 - INFO -   Chunk 3: 4cdb3687 (926 chars)
+2025-07-24 00:52:34,688 - INFO -     Lines: 1-17
+2025-07-24 00:52:34,688 - INFO - 
+🔧 Testing chunking strategy: class
+2025-07-24 00:52:34,689 - INFO - 📊 class: Generated 5 chunks
+2025-07-24 00:52:34,689 - INFO -   Chunk 1: fd779552 (1406 chars)
+2025-07-24 00:52:34,689 - INFO -     Function: read_root
+2025-07-24 00:52:34,689 - INFO -     Lines: 75-124
+2025-07-24 00:52:34,689 - INFO -   Chunk 2: cab651bc (19 chars)
+2025-07-24 00:52:34,689 - INFO -     Lines: 1-2
+2025-07-24 00:52:34,690 - INFO -   Chunk 3: 4cdb3687 (926 chars)
+2025-07-24 00:52:34,690 - INFO -     Lines: 1-17
+2025-07-24 00:52:34,690 - INFO - 
+🔧 Testing chunking strategy: semantic_block
+2025-07-24 00:52:34,690 - INFO - 📊 semantic_block: Generated 5 chunks
+2025-07-24 00:52:34,690 - INFO -   Chunk 1: 92b81d8e (5949 chars)
+2025-07-24 00:52:34,690 - INFO -     Lines: 1-159
+2025-07-24 00:52:34,690 - INFO -   Chunk 2: afc87eaa (19 chars)
+2025-07-24 00:52:34,690 - INFO -     Lines: 1-2
+2025-07-24 00:52:34,690 - INFO -   Chunk 3: d710c97e (926 chars)
+2025-07-24 00:52:34,690 - INFO -     Lines: 1-17
+2025-07-24 00:52:34,690 - INFO - 
+🔧 Testing chunking strategy: fixed_size
+2025-07-24 00:52:34,691 - INFO - 📊 fixed_size: Generated 12 chunks
+2025-07-24 00:52:34,691 - INFO -   Chunk 1: aa1bb640 (1000 chars)
+2025-07-24 00:52:34,691 - INFO -     Lines: 1-18
+2025-07-24 00:52:34,691 - INFO -   Chunk 2: ba6ce2d8 (1000 chars)
+2025-07-24 00:52:34,691 - INFO -     Lines: 16-35
+2025-07-24 00:52:34,691 - INFO -   Chunk 3: 53860137 (1000 chars)
+2025-07-24 00:52:34,691 - INFO -     Lines: 33-53
+2025-07-24 00:52:34,691 - INFO - 
+🔧 Testing chunking strategy: logical_section
+2025-07-24 00:52:34,691 - INFO - 📊 logical_section: Generated 9 chunks
+2025-07-24 00:52:34,691 - INFO -   Chunk 1: fbbaa082 (5949 chars)
+2025-07-24 00:52:34,691 - INFO -     Lines: 1-159
+2025-07-24 00:52:34,691 - INFO -   Chunk 2: dc01d4d0 (19 chars)
+2025-07-24 00:52:34,691 - INFO -     Lines: 1-2
+2025-07-24 00:52:34,691 - INFO -   Chunk 3: d59511f8 (926 chars)
+2025-07-24 00:52:34,691 - INFO -     Lines: 1-17
+2025-07-24 00:52:34,692 - INFO - 
+✅ Chunking experiments completed!
+2025-07-24 00:52:34,692 - INFO - Next step: Choose best strategy and implement full loader
+2025-07-24 00:53:48,369 - INFO - 🚀 Starting comprehensive chunking experiment...
+2025-07-24 00:53:48,838 - INFO - Connected to Milvus
+2025-07-24 00:53:50,572 - INFO - Created collection: rag_chunks_function
+2025-07-24 00:53:51,728 - INFO - Created collection: rag_chunks_fixed_size
+2025-07-24 00:53:52,839 - INFO - Created collection: rag_chunks_semantic_block
+2025-07-24 00:53:52,839 - INFO - Fetching files from repository: fastapi/fastapi
+2025-07-24 00:53:53,200 - INFO - Using default branch: master
+2025-07-24 00:53:57,248 - INFO - Successfully fetched 15 files from fastapi/fastapi
+2025-07-24 00:53:57,250 - INFO - Fetching files from repository: django/django
+2025-07-24 00:53:57,531 - INFO - Using default branch: main
+2025-07-24 00:54:02,176 - INFO - Successfully fetched 15 files from django/django
+2025-07-24 00:54:02,179 - INFO - 📁 Total files fetched: 30
+2025-07-24 00:54:02,179 - INFO - 
+🔧 Processing strategy: function
+2025-07-24 00:54:02,187 - INFO - 📊 Generated 30 chunks
+2025-07-24 00:54:02,187 - INFO - Vectorizing 30 function chunks...
+2025-07-24 00:54:02,201 - INFO - Vocabulary size for function: 2497
+2025-07-24 00:54:05,667 - INFO - Inserted 30 chunks into function collection
+2025-07-24 00:54:05,667 - INFO - 
+🔧 Processing strategy: fixed_size
+2025-07-24 00:54:05,669 - INFO - 📊 Generated 68 chunks
+2025-07-24 00:54:05,669 - INFO - Vectorizing 68 fixed_size chunks...
+2025-07-24 00:54:05,685 - INFO - Vocabulary size for fixed_size: 2910
+2025-07-24 00:54:08,852 - INFO - Inserted 68 chunks into fixed_size collection
+2025-07-24 00:54:08,852 - INFO - 
+🔧 Processing strategy: semantic_block
+2025-07-24 00:54:08,854 - INFO - 📊 Generated 30 chunks
+2025-07-24 00:54:08,854 - INFO - Vectorizing 30 semantic_block chunks...
+2025-07-24 00:54:08,862 - INFO - Vocabulary size for semantic_block: 2788
+2025-07-24 00:54:12,488 - INFO - Inserted 30 chunks into semantic_block collection
+2025-07-24 00:54:14,183 - INFO - Loaded function collection: 30 entities
+2025-07-24 00:54:16,422 - INFO - Loaded fixed_size collection: 68 entities
+2025-07-24 00:54:17,935 - INFO - Loaded semantic_block collection: 30 entities
+2025-07-24 00:54:17,935 - INFO - 
+📈 EXPERIMENT RESULTS:
+2025-07-24 00:54:17,935 - INFO - ==================================================
+2025-07-24 00:54:17,935 - INFO - ✅ function:
+2025-07-24 00:54:17,935 - INFO -    Chunks: 30
+2025-07-24 00:54:17,936 - INFO -    Avg size: 1429 chars
+2025-07-24 00:54:17,936 - INFO -    Collection: rag_chunks_function
+2025-07-24 00:54:17,936 - INFO - ✅ fixed_size:
+2025-07-24 00:54:17,936 - INFO -    Chunks: 68
+2025-07-24 00:54:17,936 - INFO -    Avg size: 751 chars
+2025-07-24 00:54:17,936 - INFO -    Collection: rag_chunks_fixed_size
+2025-07-24 00:54:17,936 - INFO - ✅ semantic_block:
+2025-07-24 00:54:17,936 - INFO -    Chunks: 30
+2025-07-24 00:54:17,936 - INFO -    Avg size: 1580 chars
+2025-07-24 00:54:17,936 - INFO -    Collection: rag_chunks_semantic_block
+2025-07-24 00:54:17,936 - INFO - 
+🎯 RECOMMENDATIONS:
+2025-07-24 00:54:17,936 - INFO - • FUNCTION chunks: Best for code-specific queries
+2025-07-24 00:54:17,936 - INFO - • FIXED_SIZE chunks: Best for general text search
+2025-07-24 00:54:17,936 - INFO - • SEMANTIC_BLOCK chunks: Balanced for mixed queries
+2025-07-24 01:37:14,057 - INFO - 🤖 Loading embedding model: all-MiniLM-L6-v2
+2025-07-24 01:37:14,094 - INFO - Use pytorch device_name: mps
+2025-07-24 01:37:14,094 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-24 01:37:15,917 - INFO - ✅ Embedding model loaded. Dense dim: 384
+2025-07-24 01:37:16,340 - INFO - 🔧 Fitting TF-IDF vectorizer...
+2025-07-24 01:37:39,621 - INFO - 🤖 Loading embedding model: all-MiniLM-L6-v2
+2025-07-24 01:37:39,647 - INFO - Use pytorch device_name: mps
+2025-07-24 01:37:39,647 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-24 01:37:41,307 - INFO - ✅ Embedding model loaded. Dense dim: 384
+2025-07-24 01:37:41,478 - INFO - 🔧 Fitting TF-IDF vectorizer...
+2025-07-24 01:37:41,485 - INFO - ✅ TF-IDF fitted with 45 features
+2025-07-24 01:38:21,807 - INFO - 🤖 Loading embedding model: all-MiniLM-L6-v2
+2025-07-24 01:38:21,836 - INFO - Use pytorch device_name: mps
+2025-07-24 01:38:21,837 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-24 01:38:23,702 - INFO - ✅ Embedding model loaded. Dense dim: 384
+2025-07-24 01:38:23,702 - INFO - 🔧 Fitting TF-IDF vectorizer...
+2025-07-24 01:38:23,704 - INFO - ✅ TF-IDF fitted with 47 features

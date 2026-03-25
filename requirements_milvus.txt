@@ -1,0 +1,20 @@
+#!/usr/bin/env python3
+# Requirements for GitHub to Milvus sparse vector loader
+
+# Core dependencies
+pymilvus>=2.4.0
+requests>=2.31.0
+numpy>=1.24.0
+scipy>=1.10.0
+scikit-learn>=1.3.0
+pandas>=2.0.0
+
+# Optional but recommended
+python-dotenv>=1.0.0  # For environment variable management
+tqdm>=4.65.0          # Progress bars
+click>=8.1.0          # CLI interface (if needed)
+
+# Development/debugging
+jupyter>=1.0.0        # For interactive development
+matplotlib>=3.7.0     # For visualizations
+seaborn>=0.12.0       # Enhanced plotting 
