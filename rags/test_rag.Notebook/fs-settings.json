@@ -1,0 +1,9 @@
+{
+  "gitExclusions": [
+    {
+      "field": "fileType",
+      "op": "==",
+      "value": ".py"
+    }
+  ]
+}
